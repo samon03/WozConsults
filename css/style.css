@@ -139,7 +139,7 @@
 }
 
 
-.one-text {
+.one-text, .dark-org {
     font-family: 'Assistant', sans-serif;
     font-size: 40px;
     font-weight: 300;
@@ -182,7 +182,7 @@
     padding-left: 7rem !important;
 }
 
-.help-text {
+.help-text, .help-text2 {
     font-family: 'Assistant', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -219,6 +219,9 @@
     display: none;
 }
 
+.menu-hide {
+    display: none;
+}
 /* .menu-button1 {
     display: none;
 }
@@ -228,9 +231,17 @@
 } */
 
 @media only screen and (max-width: 600px) {
-    #main-tab {
+    .nav-cal {
         display: none;
     } 
+
+    .main-tab {
+        display: none;
+    }
+
+    .menu-hide {
+        display: block !important;
+    }
 
     .back-image {
         background-image: url("../images/House3-03 1.png");
@@ -316,17 +327,43 @@
     .left {
         display: none;
     }
+
+    .head span  {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .title, .muni, .dark-org {
+        font-size: 24px;
+        line-height: 36px;
+        width: 100%;
+    }
+
+    .li-text, .phone-text, .help-text, .italic {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .one-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .uro-text {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .li-text2, .user, .help-text2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
 } 
 
-@media only screen and (max-width: 768px) and (min-width: 650px) { 
-    /* button#menu-button1 {
-        display: flex;
-        justify-content:end; 
-    } */
-
-    #main-tab {
-        display: none;
-    } 
+@media only screen and (max-width: 770px) and (min-width: 650px) { 
+    .main-tab {
+        text-align: center;
+    }
 
     .img-height {
         height: 400px;
@@ -339,6 +376,38 @@
 
     #img-tab {
         display: block;
+    }
+
+    #arrow-mob, #arrow-des {
+        display: none;
+     }
+
+    #arrow-tab {
+        display: block;
+     }
+
+    .banner .col-md-6, .estimate .col-md-6 {
+        width: 50%;
+    }
+     
+    .back-image {
+        background-image: url("../images/House3-03 11.png");
+        background-size: cover;
+        background-repeat: no-repeat;  
+        position: relative;
+    }
+
+    .img-height {
+        width: 200px !important;
+        height: 300px !important;
+    }
+
+    .estimate .col-md-2 {
+        width: 20%;
+    }
+
+    .estimate .col-md-4 {
+        width: 30%;
     }
 
     .So-why .col-md-6{
@@ -412,5 +481,30 @@
     .muni, .tax {
         width: 50%;
     } 
+
+    .head span, .li-text, .one-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .title, .uro-text, .dark-org{
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .muni, .phone-text, .help-text {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .li-text2, .italic {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    
+    .user, .help-text2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
     
 }
